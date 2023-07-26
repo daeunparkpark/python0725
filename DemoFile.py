@@ -30,5 +30,17 @@ f.close()
 #파일 읽기
 f = open(r"c:\work\demo.txt","rt",encoding="utf-8")
 result = f.read()
+print("---라인단위---")
+f.seek(0)
+print(f.readline(), end="")
+print(f.readline(), end="")
+print("---리스트로 받기---")
+f.seek(0)
+result = f.readlines()
+print(result)
+
 f.close()
 print(result)
+
+
+
