@@ -8,12 +8,13 @@ from selenium.webdriver.common.by import By
 import clipboard
 import time
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+driver= webdriver.Chrome()
 driver.get('https://nid.naver.com/nidlogin.login')
 
 # 네이버 메인화면에서 로그인 버튼 클릭
-# driver.find_element_by_xpath('//*[@id="account"]/a').click()
-# time.sleep(1)   # 1초 시간 지연
+driver.find_element_by_xpath('//*[@id="account"]/a').click()
+time.sleep(1)   # 1초 시간 지연
 
 # 로그인 창에 아이디/비밀번호 입력
 loginID = "kim"
