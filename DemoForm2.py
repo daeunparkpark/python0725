@@ -40,7 +40,7 @@ class DemoForm(QMainWindow, form_class):
             price = price.text.replace("\n","")
             addr = addr.text.replace("\n","") 
             print("{0},{1},{2}".format(title, price, addr))
-            f.write(f("{title}, {price}, {addr}\n"))
+            f.write(f"{title}, {price}, {addr}\n")
 
         f.close()
         self.label.setText("당근마켓 크롤링완료")

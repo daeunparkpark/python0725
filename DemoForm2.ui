@@ -117,7 +117,7 @@
    <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>thridClick()</slot>
+   <slot>thirdClick()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>601</x>
@@ -133,6 +133,6 @@
  <slots>
   <slot>firstClick()</slot>
   <slot>secondClick()</slot>
-  <slot>thridClick()</slot>
+  <slot>thirdClick()</slot>
  </slots>
 </ui>
